@@ -1,0 +1,368 @@
+/* Homepage.css */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: consolas;
+}
+
+.homepage-container {
+  /* border-radius: 2px; */
+  /* margin-left: 10%; */
+}
+
+.section-one {
+  margin-top: 10px;
+  border-left: 10px solid #6faaea;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 100%;
+  /* width: 50%; */
+}
+
+.left-section {
+  flex: 1;
+}
+
+.car-image-1 {
+  width: 500px;
+  height: auto;
+}
+
+.right-side {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.quote {
+  margin-right: 20px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.buttons-container {
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+.book-btn,
+.learn-more {
+  margin: 10px;
+  padding: 30px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #0066b2;
+  border: 1px solid #0066b2;
+  color: #fff;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 300px;
+  margin-left: 0px;
+}
+
+.learn-more {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+}
+
+.learn-more:hover {
+  color: black;
+  background-color: white;
+}
+
+.book-btn {
+  margin-right: 10px;
+}
+
+.book-btn:hover {
+  color: #0066b2;
+  background-color: white;
+}
+
+.booking-section {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-right: 1px solid #0066b2;
+  border-bottom: 1px solid #0066b2;
+  border-radius: 1px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+select,
+input,
+#names {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 1px;
+  border: 1px solid black;
+}
+
+select {
+  width: 100%;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.submit {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #0066b2;
+  color: #fff;
+  border: 1px solid #0066b2;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: -5px;
+  margin-left: 50%;
+  width: 50%;
+}
+
+.submit:hover {
+  color: #0066b2;
+  background-color: white;
+}
+
+.side-right {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  /* margin-bottom: 20px; */
+  border-left: 1px solid #0066b2;
+  border-top: 1px solid #0066b2;
+}
+
+.model {
+  color: #0066b2;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.car-img2 {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.car-year {
+  font-size: 18px;
+  color: #0066b2;
+  margin-top: 10px;
+}
+
+.details {
+  font-size: 18px;
+  color: black;
+  line-height: 1.4;
+  margin-top: -200px;
+  float: right;
+  margin-left: 30px;
+  width: 50%;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+  .homepage-container {
+    padding: 5px;
+  }
+
+  .quote {
+    width: 400px;
+  }
+
+  .car-image-1 {
+    width: 400px;
+  }
+
+  .right-side {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-one {
+    flex-direction: column;
+  }
+
+  .buttons-container {
+    margin-left: 100px;
+  }
+
+  .quote {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .book-btn,
+  .learn-more {
+    display: block;
+    padding: 20px 20px;
+    font-size: 20px;
+    width: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .model {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -10px;
+  }
+
+  .car-img2 {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .section-one {
+    border: none;
+  }
+  select {
+    width: 94%;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .car-year {
+    font-size: 12px;
+
+    margin-top: 10px;
+  }
+
+  .details {
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: -200px;
+    float: right;
+    margin-left: 30px;
+    width: 50%;
+    margin-bottom: -50px;
+  }
+
+  .car-image-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .homepage-container {
+    padding: 5px;
+  }
+  .card h4 {
+    margin-top: -10px;
+  }
+  .card {
+    margin-bottom: 20px;
+  }
+  .details {
+    margin-top: -180px;
+  }
+  .model {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .buttons-container {
+    margin-left: 10px;
+  }
+  .quote {
+    /* margin-left: 20px; */
+    /* text-align: justify; */
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .car-image-1 {
+    display: none;
+  }
+
+  .right-side {
+    padding: 0 5px;
+  }
+
+  .book-btn,
+  .learn-more {
+    display: block;
+    padding: 20px 20px;
+    font-size: 20px;
+    width: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .submit {
+    width: 50%;
+  }
+
+  .details {
+    text-align: justify;
+    font-size: 10px;
+  }
+
+  .car-img2 {
+    width: 150px;
+  }
+  .section-one {
+    border: none;
+  }
+}
+b {
+  color: #0066b2;
+  /* text-decoration: overline; */
+  text-transform: uppercase;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0066b2;
+  border-radius: 1px;
+}

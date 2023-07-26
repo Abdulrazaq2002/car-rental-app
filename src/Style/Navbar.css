@@ -1,0 +1,175 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+}
+
+.nav-img {
+  width: 150px;
+  height: 60px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.heading {
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+ul {
+  margin-top: 0;
+  float: right;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav ul li:hover {
+  color: #0066b2;
+}
+
+.menu-close {
+  display: none;
+}
+
+@media (max-width: 765px) {
+  .Login {
+    display: none;
+  }
+
+  .heading {
+    font-size: 20px;
+
+    text-decoration: none;
+    margin-left: 10px;
+    color: black;
+    margin-top: 30px;
+  }
+  #tit-cont {
+    margin-bottom: -10px;
+  }
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: -20px;
+    transition: transform 0.3s ease-in-out;
+    position: absolute;
+    right: 50px;
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: snow;
+    color: #0e2431;
+    transform: translateX(100%);
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    z-index: 2;
+  }
+
+  .menu.open {
+    transform: translateX(0);
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .menu ul li {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .bar {
+    display: inline;
+    width: 25px;
+    height: 3px;
+    background-color: #0066b2;
+    margin-left: 0px;
+    margin: 3px 0;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .menu-close {
+    font-size: 60px;
+    font-weight: bolder;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .menu-close:hover {
+    color: #0066b2;
+  }
+}
+
+.link {
+  color: black;
+}
+
+.link:hover {
+  color: #0066b2;
+}
+
+.Login {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  margin-left: 2px;
+  border-radius: 1px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+.register {
+  color: #0066b2;
+  background-color: white;
+  border: 1px solid #0066b2;
+}
+
+.register:hover {
+  box-shadow: 0 0 5px rgb(75, 75, 222);
+  text-decoration: none;
+}
+
+.signin {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.signin:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 5px rgba(0, 7, 0, 2);
+}

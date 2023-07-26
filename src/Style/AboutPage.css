@@ -1,0 +1,103 @@
+body {
+  font-family: consolas;
+}
+.car-rental-page {
+  border-top: 1px solid #0066b2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+}
+
+.about-section h5 {
+  color: grey;
+  font-size: 20px;
+  text-align: justify;
+}
+.about-section {
+  width: 50%;
+  margin: 1px;
+}
+.about-section h1 {
+  text-decoration: none;
+}
+.contact-section {
+  padding: 10px;
+  width: 50%;
+}
+
+#gmail,
+#Name {
+  width: 95%;
+  border: 1px solid rgb(144, 142, 142);
+  outline: none;
+  border-radius: 1px;
+  margin-bottom: 10px;
+}
+#msg {
+  width: 98%;
+  margin-bottom: 10px;
+  border: 1px solid rgb(144, 142, 142);
+  outline: none;
+  height: 100px;
+}
+.btn {
+  font-size: 20px;
+  font-weight: bold;
+  width: 99%;
+  color: white;
+  background-color: #0066b2;
+  padding: 10px;
+  border: 1px solid #0066b2;
+  border-radius: 1px;
+}
+.btn:hover {
+  color: #0066b2;
+  background-color: white;
+}
+.foot {
+  font: 20px;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 1px;
+  border-top: 1px solid #0066b2;
+}
+.foot h1 {
+  text-decoration: none;
+  /* font-style: italic; */
+  font-weight: 100;
+}
+.foot h3 {
+  font-size: 20px;
+  width: auto;
+  /* color: white; */
+}
+.foot h1 strong {
+  font-size: 30px;
+  color: #0066b2;
+  text-decoration: underline;
+}
+@media (max-width: 751px) {
+  .car-rental-page {
+    /* margin-left: -50px; */
+    display: block;
+  }
+  .about-section {
+    width: 90%;
+  }
+  .about-section h5 {
+    margin-left: 4%;
+    width: 90%;
+    color: grey;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .contact-section {
+    width: 98%;
+  }
+  input,
+  textarea,
+  #naam {
+    width: 90%;
+  }
+}
